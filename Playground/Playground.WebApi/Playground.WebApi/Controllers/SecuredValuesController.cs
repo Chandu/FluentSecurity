@@ -10,5 +10,10 @@ namespace Playground.WebApi.Controllers
 		{
 			return Enumerable.Range(1, 20).Select(a => "SecuredValue-" + a.ToString());
 		}
+
+		public IEnumerable<string> _UnderGet()
+		{
+			return Enumerable.Range(1, 20).Select(a => "UnsecuredValue-" + a.ToString());
+		}
 	}
 }

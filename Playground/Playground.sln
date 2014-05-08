@@ -28,6 +28,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluentSecurity.WebApi", "..
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Playground.WebApi", "Playground.WebApi\Playground.WebApi\Playground.WebApi.csproj", "{F3521B26-D63F-4FF1-A0B3-583408EE731E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Playground.Mvc", "Playground.Mvc\Playground.Mvc.csproj", "{CB4A4782-5801-4411-9AF0-8E82EF7F67FE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -62,6 +64,10 @@ Global
 		{F3521B26-D63F-4FF1-A0B3-583408EE731E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F3521B26-D63F-4FF1-A0B3-583408EE731E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F3521B26-D63F-4FF1-A0B3-583408EE731E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB4A4782-5801-4411-9AF0-8E82EF7F67FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB4A4782-5801-4411-9AF0-8E82EF7F67FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB4A4782-5801-4411-9AF0-8E82EF7F67FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB4A4782-5801-4411-9AF0-8E82EF7F67FE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

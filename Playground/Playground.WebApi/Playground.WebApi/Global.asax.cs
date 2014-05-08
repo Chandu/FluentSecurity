@@ -1,5 +1,6 @@
 ﻿using System.Web.Http;
 using FluentSecurity;
+using FluentSecurity.WebApi;
 using FluentSecurity.WebApi.Configuration;
 using Playground.WebApi.Controllers;
 
@@ -18,9 +19,17 @@ namespace Playground.WebApi
 				config.GetAuthenticationStatusFrom(() => false);
 				config.For<ValuesController>()
 					.DenyAuthenticatedAccess();
-				config.For<ValuesController>()
+				config.For<SecuredValuesController>()
 					.DenyAnonymousAccess();
 			});
+			RegisterWebApiFilters(GlobalConfiguration.Configuration.Filters);
+
 		}
+
+		public static void RegisterWebApiFilters(System.Web.Http.Filters.HttpFilterCollection filters)
+		{
+			filters.Add(new HandleSecurityAttribute());
+		}
+
 	}
 }
